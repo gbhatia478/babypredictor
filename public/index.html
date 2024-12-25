@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Prediction App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Predict Gaurav and Nishita's Baby's Due Date</h1>
+    <form id="prediction-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="date">Predicted Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="time">Predicted Time:</label>
+        <input type="time" id="time" name="time" required><br><br>
+
+        <button type="submit">Submit Prediction</button>
+    </form>
+
+    <h2>Predictions</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody id="predictions-list">
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
